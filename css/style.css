@@ -1,0 +1,12 @@
+.fa-search {
+  color: #000;
+}
+select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+input {
+  border-radius: 5em;
+}
