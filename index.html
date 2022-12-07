@@ -16,29 +16,35 @@
   </head>
   <body>
     <div class="container-fluid bg-secondary py-3 px-lg-5 d-none d-lg-block">
-      <header class="row">
+      <!-- header -->
+
+      <header class="row align-items-center">
         <div class="col-md-4 text-start mb-lg-0">
-          <div class="d-inline-flex align-items-center">
+          <div class="d-flex align-items-center">
             <img
-              src="./image/img_508630.png"
+              src="./images/img_508630.png"
               alt="profile picture"
               width="50"
               height="50"
             />
-            <p class="ms-3 mt-3">Hi, James</p>
+            <p class="ms-3">Hi, James</p>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="p-2"><p class="m-2">Logo</p></div>
         </div>
-        <div class="col-md-4 text-end">
-          <div class="p-2"><p class="m-2">Cart</p></div>
+        <div class="col-md-4">
+          <div class="p-2 d-flex justify-content-end align-items-center">
+            <p class="mx-1 my-2">Cart</p>
+            <div id="cartAmount" class="cartAmount rounded-circle p-1">0</div>
+          </div>
         </div>
       </header>
     </div>
-    <div class="container-fluid pt-3">
+    <!-- search -->
+    <div class="container-fluid py-3 px-lg-5 d-none d-lg-block">
       <div class="row">
-        <div class="col-md-4 ms-4">
+        <div class="col-md-4 me-3">
           <div class="input-group">
             <button
               type="button"
@@ -53,7 +59,7 @@
             />
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4 ms-3">
           <select class="custom-select mb-3" style="height: 38px">
             <option selected>Category</option>
             <option value="1">Location 1</option>
@@ -63,5 +69,46 @@
         </div>
       </div>
     </div>
+    <!-- shopping items -->
+    <div class="container-fluid py-3 px-lg-5 d-none d-lg-block">
+      <div class="pt-5 pb-3">
+        <div class="row">
+          <div class="col-lg-4">
+            <div
+              class="d-flex flex-column justify-content-center mb-4 border shadow"
+            >
+              <div class="image-container">
+                <img
+                  src="./images/alexandra-tran-jNPVlv8USYA-unsplash.jpg"
+                  alt="cosmetic"
+                  class="w-100"
+                />
+              </div>
+              <div class="info-container p-4">
+                <h1>Title</h1>
+                <p class="text-start text-break my-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  dolores voluptate ipsa quae aliquid voluptatum, rerum itaque
+                  asperiores facilis odio, libero.
+                </p>
+                <p class="text-start text-break mt-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  id cumque obcaecati voluptatem nam.
+                </p>
+                <div
+                  class="d-flex flex-row justify-content-between align-items-center mt-4"
+                >
+                  <p>price 0.0$</p>
+                  <button class="add-btn px-3 py-2">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>
