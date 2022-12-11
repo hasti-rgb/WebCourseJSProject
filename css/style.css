@@ -6,8 +6,17 @@
 body {
   font-family: sans-serif;
 }
+.logo {
+  background: rgb(239, 222, 222);
+}
+.logo:hover {
+  background: rgb(203, 189, 189);
+}
 .fa-search {
   color: #000;
+}
+.fa-search:hover {
+  color: #2c6dc1;
 }
 select {
   border-top: none;
@@ -22,8 +31,9 @@ input {
   background: #2c6dc1;
   border: none;
   color: white;
-  /* width: 120px;
-  height: 35px; */
+}
+.add-btn:hover {
+  background: #255aa1;
 }
 .cartAmount {
   background: red;
